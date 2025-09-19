@@ -1,0 +1,63 @@
+@import url(../css/general-sans.css);
+
+:root{
+    --c-dark:#212529;
+    --c-brand:#00bf63;
+    --c-brand-light:#54df9b;
+    --c-body:#727272;
+    --font-base:"GeneralSans", sans-serif;
+    --box-shadow:0px 15px 25px rgba(0,0,0,0.08);
+    --transition:all 0.5s ease;
+}
+
+body {
+    background: linear-gradient(to right, white, var(--c-brand-light));
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    background-color: #fff;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-text{
+    font-size:70px;
+    font-weight: 500;
+    color: var(--c-brand);
+}
+
+.container-table {
+    background-color: #fff;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    min-height: 40vh;
+    flex: 1;
+}
+
+.searchbar{
+    background-color: transparent;
+    border-radius: 15px;
+    border: solid 3px white;
+}
+
+.custom{
+    
+    border-radius:100px;
+    border: solid 3px var(--c-brand);
+}
+
+.del{
+    background-color: #dc3545;
+}
+
+.del:hover{
+    background-color: #9e232f;
+}

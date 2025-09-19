@@ -1,0 +1,80 @@
+@import url(../css/general-sans.css);
+
+:root {
+    --c-dark: #212529;
+    --c-brand: #00bf63;
+    --c-brand-light: #54df9b;
+    --c-body: #727272;
+    --font-base: "GeneralSans", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.5s ease;
+}
+
+body {
+    background: linear-gradient(to right, white, var(--c-brand-light));
+    height: 100vh;
+    margin: 0;
+    font-family: var(--font-base);
+    display: flex;
+    flex-direction: column;
+}  
+
+.bigContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    width: 600px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.formContainer h2 {
+    margin-bottom: 1rem;
+}
+
+.formContainer span {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--c-body);
+}
+
+.formContainer input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.formContainer button {
+    background-color: var(--c-brand);
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.formContainer button:hover {
+    background-color: var(--c-brand-light);
+}
+
+.formContainer .text-danger {
+    font-size: 0.875rem;
+    color: red;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.formContainer h5{
+    text-align: left;
+}
